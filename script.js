@@ -44,5 +44,5 @@ languageButtons.forEach(button => {
 });
 
 document.getElementById('startGameButton').addEventListener('click', function() {
-    window.location.href = 'game_1_level1.html';
+    window.location.href = 'Oceano_1_L1/game_1_level1.html';
 });

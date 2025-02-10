@@ -55,14 +55,14 @@ h1 {
 }
 
 #playButton {
-    width: 80%;
-    max-width: 200px;
-    height: 50px;
+    width: 60%;
+    max-width: 150px;
+    height: 40px;
     background-color: #4CAF50;
     border: 4px solid #388E3C;
     border-radius: 25px;
     color: white;
-    font-size: 5vw;
+    font-size: auto;
     cursor: pointer;
     transition: 0.3s;
     animation: heartbeat 1.5s infinite;
@@ -71,6 +71,69 @@ h1 {
 
 #playButton:hover {
     background-color: #45A049;
+    transform: scale(1.05);
+}
+
+.language-buttons {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    transition: opacity 0.5s ease-out;
+}
+
+.language-buttons.hidden {
+    opacity: 0;
+}
+
+.language-button {
+    width: 50%;
+    max-width: 1000px;
+    height: 60px;
+    background-color: #2196F3;
+    border: 4px solid #1976D2;
+    border-radius: 15px;
+    color: white;
+    font-size: 2vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.language-button:hover {
+    background-color: #1E88E5;
+    transform: scale(1.05);
+}
+
+.instructions-image {
+    display: none;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px 0;
+    border-radius: 15px; 
+    border: 2px solid black;
+}
+
+.instructions-image.visible {
+    display: block;
+}
+
+#startGameButton {
+    display: none;
+    width: 60%; 
+    max-width: 200px; 
+    height: 70px; 
+    background-color: #FF5722;
+    border: 4px solid #E64A19;
+    border-radius: 25px;
+    color: white;
+    font-size: 2.5vw;
+    cursor: pointer;
+    transition: 0.3s;
+    animation: heartbeat 1.5s infinite; 
+}
+
+#startGameButton:hover {
+    background-color: #F4511E;
     transform: scale(1.05);
 }
 

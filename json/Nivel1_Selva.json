@@ -1,0 +1,108 @@
+{
+  "background": {
+    "src": "../images/Nivel1/Selva/fondo.jpg"
+  },
+  "images": [
+    {
+      "src": "../images/Nivel1/Selva/elefante.png",
+      "x": 6900,
+      "y": 2000,
+      "width": 1200,
+      "height": 1000,
+      "direction": "left",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel1/Selva/mono.png",
+      "x": -650,
+      "y": 2200,
+      "width": 950,
+      "height": 950,
+      "direction": "right",
+      "speed": 4
+    },
+    {
+      "src": "../images/Nivel1/Selva/osopolar.png",
+      "x": -550,
+      "y": 1620,
+      "width": 1550,
+      "height": 1500,
+      "direction": "right",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel1/Selva/jirafa.png",
+      "x": 6920,
+      "y": 800,
+      "width": 1350,
+      "height": 1350,
+      "direction": "left",
+      "speed": 4
+    }
+  ],
+  "questions": {
+    "es": {
+      "text": "¿Qué animal no cuadra en la escena?",
+      "answers": [
+        {
+          "text": "Jirafa",
+          "value": "jirafa"
+        },
+        {
+          "text": "Elefante",
+          "value": "elefante"
+        },
+        {
+          "text": "Oso Polar",
+          "value": "osopolar"
+        },
+        {
+          "text": "Mono",
+          "value": "mono"
+        }
+      ]
+    },
+    "en": {
+      "text": "Which animal does not fit in the scene?",
+      "answers": [
+        {
+          "text": "Giraffe",
+          "value": "jirafa"
+        },
+        {
+          "text": "Elephant",
+          "value": "elefante"
+        },
+        {
+          "text": "Polar Bear",
+          "value": "osopolar"
+        },
+        {
+          "text": "Monkey",
+          "value": "mono"
+        }
+      ]
+    },
+    "cat": {
+      "text": "Quin animal no encaixa a l'escena?",
+      "answers": [
+        {
+          "text": "Girafa",
+          "value": "jirafa"
+        },
+        {
+          "text": "Elefant",
+          "value": "elefante"
+        },
+        {
+          "text": "Ós Polar",
+          "value": "osopolar"
+        },
+        {
+          "text": "Mico",
+          "value": "mono"
+        }
+      ]
+    }
+  }
+}

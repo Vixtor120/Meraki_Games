@@ -3,9 +3,19 @@ document.getElementById('addImageButton').addEventListener('click', function() {
     document.getElementById('imagesContainer').appendChild(imageEntry);
 });
 
-document.getElementById('addAnswerButton').addEventListener('click', function() {
-    const answerEntry = document.querySelector('.answerEntry').cloneNode(true);
-    document.getElementById('answersContainer').appendChild(answerEntry);
+document.getElementById('addAnswerButtonEs').addEventListener('click', function() {
+    const answerEntry = document.querySelector('.answerEntryEs').cloneNode(true);
+    document.getElementById('answersContainerEs').appendChild(answerEntry);
+});
+
+document.getElementById('addAnswerButtonEn').addEventListener('click', function() {
+    const answerEntry = document.querySelector('.answerEntryEn').cloneNode(true);
+    document.getElementById('answersContainerEn').appendChild(answerEntry);
+});
+
+document.getElementById('addAnswerButtonCat').addEventListener('click', function() {
+    const answerEntry = document.querySelector('.answerEntryCat').cloneNode(true);
+    document.getElementById('answersContainerCat').appendChild(answerEntry);
 });
 
 document.getElementById('sceneForm').addEventListener('submit', async function(event) {
@@ -18,7 +28,7 @@ document.getElementById('sceneForm').addEventListener('submit', async function(e
     const backgroundReader = new FileReader();
 
     backgroundReader.onload = function(e) {
-        const backgroundSrc = `images/imagenes/${backgroundFile.name}`;
+        const backgroundSrc = `../images/Nivel${sceneLevel}/${sceneType}/${backgroundFile.name}`;
 
         const images = Array.from(document.querySelectorAll('.imageEntry')).map(entry => {
             const imageFile = entry.querySelector('.imageSrc').files[0];
@@ -27,7 +37,7 @@ document.getElementById('sceneForm').addEventListener('submit', async function(e
             return new Promise((resolve) => {
                 imageReader.onload = function(e) {
                     resolve({
-                        src: `images/imagenes/${imageFile.name}`,
+                        src: `../images/Nivel${sceneLevel}/${sceneType}/${imageFile.name}`,
                         x: parseInt(entry.querySelector('.imageX').value),
                         y: parseInt(entry.querySelector('.imageY').value),
                         width: parseInt(entry.querySelector('.imageWidth').value),
@@ -41,16 +51,32 @@ document.getElementById('sceneForm').addEventListener('submit', async function(e
         });
 
         Promise.all(images).then(async imagesData => {
-            const questionText = document.getElementById('questionText').value;
-            const answers = Array.from(document.querySelectorAll('.answerEntry')).map(entry => ({
-                text: entry.querySelector('.answerText').value,
-                value: entry.querySelector('.answerValue').value
+            const questionTextEs = document.getElementById('questionTextEs').value;
+            const answersEs = Array.from(document.querySelectorAll('.answerEntryEs')).map(entry => ({
+                text: entry.querySelector('.answerTextEs').value,
+                value: entry.querySelector('.answerValueEs').value
+            }));
+
+            const questionTextEn = document.getElementById('questionTextEn').value;
+            const answersEn = Array.from(document.querySelectorAll('.answerEntryEn')).map(entry => ({
+                text: entry.querySelector('.answerTextEn').value,
+                value: entry.querySelector('.answerValueEn').value
+            }));
+
+            const questionTextCat = document.getElementById('questionTextCat').value;
+            const answersCat = Array.from(document.querySelectorAll('.answerEntryCat')).map(entry => ({
+                text: entry.querySelector('.answerTextCat').value,
+                value: entry.querySelector('.answerValueCat').value
             }));
 
             const sceneData = {
                 background: { src: backgroundSrc },
                 images: imagesData,
-                question: { text: questionText, answers: answers }
+                questions: {
+                    es: { text: questionTextEs, answers: answersEs },
+                    en: { text: questionTextEn, answers: answersEn },
+                    cat: { text: questionTextCat, answers: answersCat }
+                }
             };
 
             const jsonOutput = JSON.stringify(sceneData, null, 2);

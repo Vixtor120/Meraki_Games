@@ -1,0 +1,129 @@
+{
+  "background": {
+    "src": "../images/Nivel1/Granja/fondo.jpg"
+  },
+  "images": [
+    {
+      "src": "../images/Nivel1/Granja/cerdo.png",
+      "x": 3750,
+      "y": 2400,
+      "width": 800,
+      "height": 600,
+      "direction": "left",
+      "speed": 2
+    },
+    {
+      "src": "../images/Nivel1/Granja/leon.png",
+      "x": 3750,
+      "y": 1500,
+      "width": 850,
+      "height": 850,
+      "direction": "left",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel1/Granja/pollito.png",
+      "x": -550,
+      "y": 1920,
+      "width": 550,
+      "height": 450,
+      "direction": "right",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel1/Granja/vaca.png",
+      "x": 3750,
+      "y": 2200,
+      "width": 850,
+      "height": 850,
+      "direction": "left",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel1/Granja/pollo.png",
+      "x": -300,
+      "y": 1900,
+      "width": 700,
+      "height": 650,
+      "direction": "right",
+      "speed": 2
+    }
+  ],
+  "questions": {
+    "es": {
+      "text": "¿Qué animal no cuadra en la escena?",
+      "answers": [
+        {
+          "text": "Cerdo",
+          "value": "cerdo"
+        },
+        {
+          "text": "León",
+          "value": "leon"
+        },
+        {
+          "text": "Pollito",
+          "value": "pollito"
+        },
+        {
+          "text": "Pollo",
+          "value": "pollo"
+        },
+        {
+          "text": "Vaca",
+          "value": "vaca"
+        }
+      ]
+    },
+    "en": {
+      "text": "Which animal does not fit in the scene?",
+      "answers": [
+        {
+          "text": "Pig",
+          "value": "cerdo"
+        },
+        {
+          "text": "Lion",
+          "value": "leon"
+        },
+        {
+          "text": "Chick",
+          "value": "pollito"
+        },
+        {
+          "text": "Chicken",
+          "value": "pollo"
+        },
+        {
+          "text": "Cow",
+          "value": "vaca"
+        }
+      ]
+    },
+    "cat": {
+      "text": "Quin animal no encaixa a l'escena?",
+      "answers": [
+        {
+          "text": "Porc",
+          "value": "cerdo"
+        },
+        {
+          "text": "Lleó",
+          "value": "leon"
+        },
+        {
+          "text": "Pollet",
+          "value": "pollito"
+        },
+        {
+          "text": "Gallina",
+          "value": "pollo"
+        },
+        {
+          "text": "Vaca",
+          "value": "vaca"
+        }
+      ]
+    }
+  }
+}

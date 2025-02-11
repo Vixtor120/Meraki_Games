@@ -32,7 +32,8 @@ languageButtons.forEach(button => {
 
         const startGameButton = document.getElementById('startGameButton');
         startGameButton.style.display = 'block';
-        
+        startGameButton.dataset.language = language;
+
         if (language === 'es') {
             startGameButton.textContent = 'Jugar';
         } else if (language === 'en') {
@@ -44,5 +45,10 @@ languageButtons.forEach(button => {
 });
 
 document.getElementById('startGameButton').addEventListener('click', function() {
-    window.location.href = 'Oceano_1_L1/game_1_level1.html';
+    const language = this.dataset.language;
+    window.location.href = `game/game.html?lang=${language}`;
+});
+
+document.getElementById('dashboardButton').addEventListener('click', function() {
+    window.location.href = 'dashboard/dashboard.html';
 });

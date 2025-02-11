@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinematics Game</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="game.css">
+    <link rel="icon" href="../images/General/logo.png" type="image/png">
+</head>
+<body>
+    
+    <div class="background-container">
+        <img src="../images/General/fondo.png" alt="Fondo de pantalla" class="fullscreen-image">
+    </div>
+
+    <canvas style="--canvas-width: 70%; --canvas-height: 70%;"></canvas>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const language = urlParams.get('lang') || 'es';
+        startGame(language);
+    </script>
+
+</body>
+    <script src="../game_create/game_creator.js"></script>
+    <script src="../script.js"></script>
+</html>

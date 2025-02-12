@@ -1,0 +1,108 @@
+{
+  "background": {
+    "src": "../images/Nivel3/Abstracto1/fondo.jpg"
+  },
+  "images": [
+    {
+      "src": "../images/Nivel3/Abstracto1/paraguas.png",
+      "x": -800,
+      "y": 50,
+      "width": 400,
+      "height": 300,
+      "direction": "right",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel3/Abstracto1/reloj.png",
+      "x": 1820,
+      "y": 1500,
+      "width": 400,
+      "height": 400,
+      "direction": "left",
+      "speed": 2
+    },
+    {
+      "src": "../images/Nivel3/Abstracto1/silla.png",
+      "x": -550,
+      "y": 1420,
+      "width": 550,
+      "height": 550,
+      "direction": "right",
+      "speed": 3
+    },
+    {
+      "src": "../images/Nivel3/Abstracto1/sirena.png",
+      "x": 1920,
+      "y": 1200,
+      "width": 650,
+      "height": 650,
+      "direction": "left",
+      "speed": 2
+    }
+  ],
+  "questions": {
+    "es": {
+      "text": "¿Qué objeto no sigue la lógica surrealista?",
+      "answers": [
+        {
+          "text": "Paraguas",
+          "value": "paraguas"
+        },
+        {
+          "text": "Reloj",
+          "value": "reloj"
+        },
+        {
+          "text": "Silla",
+          "value": "silla"
+        },
+        {
+          "text": "Sirena",
+          "value": "sirena"
+        }
+      ]
+    },
+    "en": {
+      "text": "Which object does not follow the surreal logic?",
+      "answers": [
+        {
+          "text": "Umbrella",
+          "value": "paraguas"
+        },
+        {
+          "text": "Clock",
+          "value": "reloj"
+        },
+        {
+          "text": "Chair",
+          "value": "silla"
+        },
+        {
+          "text": "Siren",
+          "value": "sirena"
+        }
+      ]
+    },
+    "cat": {
+      "text": "Quin objecte no segueix la lògica surrealista?",
+      "answers": [
+        {
+          "text": "Paraigua",
+          "value": "paraguas"
+        },
+        {
+          "text": "Rellotge",
+          "value": "reloj"
+        },
+        {
+          "text": "Cadira",
+          "value": "silla"
+        },
+        {
+          "text": "Sirena",
+          "value": "sirena"
+        }
+      ]
+    }
+  }
+}

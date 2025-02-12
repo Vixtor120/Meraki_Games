@@ -29,7 +29,9 @@ function getRandomJson() {
         '../json/Nivel1_Granja.json', 
         '../json/Nivel1_Oceano.json', 
         '../json/Nivel1_Selva.json',
-        '../json/Nivel2_Oficina.json'
+        '../json/Nivel2_Oficina.json',
+        '../json/Nivel2_Hospital.json',
+        '../json/Nivel3_Abstracto1.json'
     ];
     const randomIndex = Math.floor(Math.random() * jsonFiles.length);
     return jsonFiles[randomIndex];
